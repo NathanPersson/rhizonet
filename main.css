@@ -343,4 +343,25 @@ a {
     .intro-button {
       width: 50%;
     }
+
+    .menu-button:hover {
+  scale:80%;
+  background: rgb(65, 71, 62);
+}
+
+.menu-button {
+  scale:80%;
+  background: rgb(65, 71, 62);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 20px 10px 15px;
+  right:0;
+  top:0;
+  width:60px;
+  height:60px;
+  margin:5px;
+  cursor:pointer;
+}
   }
