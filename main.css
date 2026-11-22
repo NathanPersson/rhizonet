@@ -60,6 +60,7 @@ a {
 .intro-item {
   position:relative;
   text-align: center;
+  font-size: 16px;
   padding:7px;
   margin: 10px;
   cursor:pointer;
@@ -89,6 +90,24 @@ a {
 .intro-button:hover {
   background: rgb(65, 71, 62);
   font-weight:bold;
+}
+
+.skip-button {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right:0;
+  top:0;
+  width:60px;
+  height:40px;
+  margin:10px;
+  cursor:pointer;
+}
+
+.skip-button:hover {
+  font-weight:bold;
+  scale:105%;
 }
 
 .left {
@@ -208,7 +227,7 @@ a {
   border-width:0px 0px 6px 3px;
 }
 
-.illo {
+.illoframe {
   position:relative;
   display:flex;
   width:100%;
@@ -226,12 +245,28 @@ a {
   position:absolute;
   left:0;
   bottom:5%;
+  cursor:pointer;
 }
 
 .rightarrow {
   position:absolute;
   right:0;
   bottom:5%;
+  cursor:pointer;
+}
+
+.introarrow {
+  position:absolute;
+  left:0;
+  bottom:5%;
+  cursor:pointer;
+}
+
+.outroarrow {
+  position:absolute;
+  right:0;
+  bottom:5%;
+  cursor:pointer;
 }
 
 
@@ -240,6 +275,14 @@ a {
 }
 
 .rightarrow:hover {
+  scale:110%;
+}
+
+.introarrow:hover {
+  scale:110%;
+}
+
+.outroarrow:hover {
   scale:110%;
 }
 
@@ -270,6 +313,7 @@ a {
   border-radius: 20px;
   margin-left:10px;
   margin-top:10px;
+  cursor:pointer;
 }
 
 .menu-item:hover {
@@ -338,6 +382,7 @@ a {
 
     .rightblock {
       margin-bottom: 20px;
+      margin-left: 5%;
     }
 
     .title {
